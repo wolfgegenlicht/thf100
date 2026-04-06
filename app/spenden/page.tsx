@@ -4,9 +4,16 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Spenden — 100% Tempelhofer Feld",
+  title: "Spenden  | 100% Tempelhofer Feld",
   description:
     "Unterstütze die Initiative mit einer Spende. Jeder Beitrag hilft bei rechtlichen Schritten, Öffentlichkeitsarbeit und dem Kampf für ein freies Tempelhofer Feld.",
+  openGraph: {
+    title: "Spenden  | 100% Tempelhofer Feld",
+    description:
+      "Unterstütze die Initiative mit einer Spende. Jeder Beitrag hilft bei rechtlichen Schritten, Öffentlichkeitsarbeit und dem Kampf für ein freies Tempelhofer Feld.",
+    locale: "de_DE",
+    type: "website",
+  },
 };
 
 export default function SpendenPage() {
@@ -14,7 +21,7 @@ export default function SpendenPage() {
     <>
       <Header />
 
-      <main>
+      <main id="main-content">
         {/* Hero */}
         <section className="dot-grid section-pad">
           <div className="container-wide">
@@ -23,7 +30,7 @@ export default function SpendenPage() {
               <h1 className="text-hero font-black leading-heading tracking-heading text-foreground mb-4">
                 Das Feld
                 <br />
-                <span className="highlight-yellow">braucht dich.</span>
+                <span className="highlight-yellow">braucht dich</span>
               </h1>
               <p className="text-lead leading-body-loose text-muted max-w-lg">
                 Die Initiative 100% Tempelhofer Feld kämpft seit Jahren für ein freies Feld. Dafür braucht sie Ressourcen.

@@ -1,3 +1,4 @@
 ignoredBuiltDependencies:
+  - react-grab
   - sharp
   - unrs-resolver
