@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
+import PasswordGate from "./components/PasswordGate";
 
 export const metadata: Metadata = {
   title: "100% Tempelhofer Feld  | Das Feld bleibt frei",
@@ -31,7 +32,9 @@ export default function RootLayout({
           />
         )}
       </head>
-      <body className="min-h-full flex flex-col antialiased">{children}</body>
+      <body className="min-h-full flex flex-col antialiased">
+        <PasswordGate>{children}</PasswordGate>
+      </body>
     </html>
   );
 }
